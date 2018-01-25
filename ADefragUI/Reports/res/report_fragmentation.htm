@@ -1,0 +1,197 @@
+<html>
+<head>
+<title></title>
+
+</head>
+
+<style type="text/css">
+    p.Header1{
+        color: #000000;
+        font-family : arial, sans-serif;
+        font-size : 28px;
+        font-weight : bold;
+        text-align:center
+    }
+    
+    td.Header2{
+        color: #000000;
+        font-family : arial, sans-serif;
+        font-size : 14px;
+        font-weight : bold;
+    }
+    
+    td.Text1{
+        color: #0000FF;
+        font-family : arial, sans-serif;
+        font-size : 14px;
+        text-align: center
+    }
+    .style3
+    {
+        width: 344px;
+        text-align: left;
+        color: #0000FF;
+    }
+    .style9
+    {
+        width: 443px;
+        height: 23px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 700;
+    }
+    .style15
+    {
+        width: 329px;
+        height: 23px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 700;
+    }
+    .style21
+    {
+        width: 448px;
+        height: 23px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 700;
+    }
+    .style22
+    {
+        width: 793px;
+        height: 23px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 700;
+    }
+    .style23
+    {
+        text-align: center;
+    }
+    .style24
+    {
+        width: 64px;
+    }
+</style>
+
+<body>
+<p class="Header1" align="center">Fragmentation</p>
+<hr />
+
+<p class="style23">Disk @DiskName@<br />
+    Total size: @TotalSize@ bytes<br />
+    Fragmentation: @Fragmentation@%</p>
+<table align="center" width="640">
+    <tr>
+        <td class="style24"><img src="img\drive_defrag.bmp" /></td>
+        <td class="style3" align="left">
+            <img src="img\defrag_legend1.bmp" /> - Used space (@UsedSpace@ bytes)<br />
+            <img src="img\defrag_legend2.bmp" /> - Fragmented space (@FragmentedSpace@ bytes)
+        </td>
+    </tr>
+</table>
+
+<hr />
+<table border="1" align="center" style="width: 640px">
+    <tr>
+        <td class="Header2">Elapsed Time</td><td class="Text1" align="center" 
+            id="ElapsedTime">@ElapsedTime@</td>
+    </tr>
+    <tr>
+        <td class="Header2">CPU Time</td><td class="Text1" align="center" id="CPUTime">@CPUTime@</td>
+    </tr>
+    <tr>
+        <td class="Header2">Number&nbsp;of&nbsp;Files&nbsp;Defragmented&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="Text1" align="center" id="FilesDefragmented">@FilesDefragmented@</td>
+    </tr>
+    <tr>
+        <td class="Header2">Drive Health</td><td class="Text1" align="center" 
+            id="DriveHealth">@DriveHealth@%</td>
+    </tr>        
+</table>
+
+<hr />
+
+<table border="1" align="center" style="width: 640px">
+    <tr>
+        <td class="style15">Data Type</td><td class="style9">After</td>
+    </tr>
+    <tr>
+        <td class="Header2">Total Number of Files</td><td class="Text1" align="center" 
+            id="TotalNumberOfFiles">@TotalNumberOfFiles@</td>
+    </tr>
+    <tr>
+        <td class="Header2">Total File Size</td><td class="Text1" id="FilesSize">@FilesSize@ bytes</td>
+    </tr>
+    <tr>
+        <td class="Header2">Number of Non-Fragmented Files</td><td class="Text1" 
+            id="NumberNonFragmentedFiles">@NumberNonFragmentedFiles@</td>
+    </tr>
+    <tr>
+        <td class="Header2">Non-Fragmented Files Size</td><td class="Text1" 
+            id="NonFragmentedFilesSize">@NonFragmentedFilesSize@ bytes</td>
+    </tr>
+    <tr>
+        <td class="Header2">Fragmented Files Size</td><td class="Text1" 
+            id="FragmentedFilesSize">@FragmentedFilesSize@ bytes</td>
+    </tr>
+    <tr>
+        <td class="Header2">Number&nbsp;of&nbsp;Excess&nbsp;File&nbsp;Fragments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="Text1" id="NumberExcessFileFragments">@NumberExcessFileFragments@</td>
+    </tr>
+    <tr>
+        <td class="Header2">File Fragmentation Health</td><td class="Text1" 
+            id="FileFragmentationHealth">@FileFragmentationHealth@</td>
+    </tr>
+    <tr>
+        <td class="Header2">Largest Free Space Health</td><td class="Text1" 
+            id="LargestFreeSpaceHealth">@LargestFreeSpaceHealth@</td>
+    </tr>        
+</table>
+<hr />
+
+<table border="1" align="center" style="width: 640px">
+    <tr>
+        <td class="style22" 
+            style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">Data Type</td>
+        <td class="style9" 
+            style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">Before</td>
+        <td class="style21" 
+            
+            style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">After</td>
+    </tr>
+    <tr>
+        <td class="Header2">Largest Free Space Chunk</td>
+        <td class="Text1" 
+            align="center" id="LargestFreeSpaceChunkBefore">@LargestFreeSpaceChunkBefore@ bytes</td>
+        <td class="Text1" 
+            align="center" id="LargestFreeSpaceChunkAfter">@LargestFreeSpaceChunkAfter@ bytes</td>
+    </tr>
+    <tr>
+        <td class="Header2">Percent Free Space Fragmentation</td>
+        <td class="Text1" 
+            align="center" id="PercentFreeSpaceFragmentationBefore">@PercentFreeSpaceFragmentationBefore@%</td>
+        <td class="Text1" 
+            align="center" id="PercentFreeSpaceFragmentationAfter">@PercentFreeSpaceFragmentationAfter@%</td>
+    </tr>
+    <tr>
+        <td class="Header2">Percent File Fragmentation</td>
+        <td class="Text1" 
+            align="center" id="PercentFileFragmentationBefore">@PercentFileFragmentationBefore@%</td>
+        <td class="Text1" 
+            align="center" id="PercentFileFragmentationAfter">@PercentFileFragmentationAfter@%</td>
+    </tr>
+    <tr>
+        <td class="Header2">Number of Fragmented Files</td>
+        <td class="Text1" 
+            align="center" id="NumberFragmentedFilesBefore">@NumberFragmentedFilesBefore@</td>
+        <td class="Text1" 
+            align="center" id="NumberFragmentedFilesAfter">@NumberFragmentedFilesAfter@</td>
+    </tr>
+</table>
+<hr />
+
+
+</body>
+
+</html>

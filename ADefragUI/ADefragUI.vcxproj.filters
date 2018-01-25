@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{d93ee6bd-f259-46fa-9163-853179b00191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ColorManager">
+      <UniqueIdentifier>{3d9fdf81-c37f-4b14-94d3-51b2e9d24f78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scheduler">
+      <UniqueIdentifier>{b5f41f26-732d-41f0-a97a-698ce58a38f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Reports">
+      <UniqueIdentifier>{879cab6b-265c-4908-a9d0-ec2785194a71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ctrls">
+      <UniqueIdentifier>{cb5d4c02-2b39-4fe8-80c3-7740a1d8f8a1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ADefragUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ADefragUIDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ADefragUIView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseListView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CInspector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CntrItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DefragView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DriveInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DriveMapView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrvMapWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\DefragOptionsPage.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\DlgBanner.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\ExcludeListOptionsPage.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\LogOptionsPage.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\OptionsPropSheet.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\PopularOptionsPage.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\ResourcePage.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\SchedulerOptionsPage.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\UpdateOptionsPage.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorManager\ColorManager.cpp">
+      <Filter>ColorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\ScheduleDrivesPage.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\ScheduleMethodPage.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\SchedulePropSheet.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\SchedulerView.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\ScheduleTask.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\ScheduleTimePage.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Reports\ReportDriveHealthView.cpp">
+      <Filter>Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="Reports\ReportExcludedFilesView.cpp">
+      <Filter>Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="Reports\ReportFileOrganizationView.cpp">
+      <Filter>Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="Reports\ReportFragmentedView.cpp">
+      <Filter>Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="Reports\ReportsView.cpp">
+      <Filter>Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="Reports\ReportSystemView.cpp">
+      <Filter>Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="Reports\ReportTop100View.cpp">
+      <Filter>Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\SSSDHtmlView.cpp">
+      <Filter>Ctrls</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrls\SSSPropSheetListBox.cpp">
+      <Filter>Ctrls</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ADefragUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ADefragUIDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ADefragUIView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseListView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CInspector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CntrItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefragView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DriveInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DriveMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DriveMapView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrvMapWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\NtStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\DefragOptionsPage.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\DlgBanner.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\ExcludeListOptionsPage.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\LogOptionsPage.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\OptionsPropSheet.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\PopularOptionsPage.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\ResourcePage.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\SchedulerOptionsPage.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings\UpdateOptionsPage.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorManager\ColorManager.h">
+      <Filter>ColorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\ScheduleDrivesPage.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\ScheduleMethodPage.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\SchedulePropSheet.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\SchedulerView.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\ScheduleTask.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\ScheduleTimePage.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Reports\ReportDriveHealthView.h">
+      <Filter>Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="Reports\ReportExcludedFilesView.h">
+      <Filter>Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="Reports\ReportFileOrganizationView.h">
+      <Filter>Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="Reports\ReportFragmentedView.h">
+      <Filter>Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="Reports\Reports.h">
+      <Filter>Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="Reports\ReportsView.h">
+      <Filter>Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="Reports\ReportSystemView.h">
+      <Filter>Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="Reports\ReportTop100View.h">
+      <Filter>Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\SSSDHtmlView.h">
+      <Filter>Ctrls</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrls\SSSPropSheetListBox.h">
+      <Filter>Ctrls</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ADefragUI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ADefragUI.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ADefragUIDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\buttons.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\defraglarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\defragsmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Settings\res\HeaderPat_1.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Settings\res\HeaderPat_2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Settings\res\HeaderPat_3.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Settings\res\HeaderPat_4.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\helplarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\helpsmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Settings\res\options.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\schedulerlarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\schedulersmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbardefrag.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ADefragUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="DriveMap.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Settings\setings.rc">
+      <Filter>Settings</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Scheduler\scheduler.rc">
+      <Filter>Scheduler</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Reports\Reports.rc">
+      <Filter>Reports</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

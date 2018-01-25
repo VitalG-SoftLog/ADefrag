@@ -1,0 +1,171 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "DriveMap.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "DriveMap.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CINSPECTOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 434
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CINSPECTOR DIALOGEX 0, 0, 441, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ClusterInspector"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_CILIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,367,151
+    PUSHBUTTON      "Close",IDOK,384,7,50,14
+    PUSHBUTTON      "Help",IDC_CIHELPBTN,384,27,50,14
+    PUSHBUTTON      "Details",IDC_CIDETAILSBTN,384,142,50,14
+    PUSHBUTTON      "Update",IDC_CIUPDATEBTN,384,162,50,14
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ALIGNLEFT | UDS_ARROWKEYS,362,162,12,14
+    EDITTEXT        IDC_EDIT1,323,162,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Open file...",IDC_CIOPENFILEBTN,7,162,50,14
+    LTEXT           "Start Claster:",IDC_STATIC,275,164,44,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_DRIVEMAPVIEW MENU 
+BEGIN
+    POPUP "DriveMapView popup"
+    BEGIN
+        MENUITEM "Claster inspector",           ID_DRIVEMAPVIEWPOPUP_CLASTERINSPECTOR
+        MENUITEM "Customize block's color",     ID_DRIVEMAPVIEWPOPUP_CUSTOMIZEBLOCK
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_BLOCK_FREE          "Free"
+    IDS_BLOCK_BEINGPROCESSED "Being processed"
+    IDS_BLOCK_ALLOCATED     "Allocated"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BLOCK_COMPRESSED    "Compressed"
+    IDS_BLOCK_FRAGMENTED    "Fragmented"
+    IDS_BLOCK_FOLDER        "Folder"
+    IDS_BLOCK_LOCKEDEXCLUSIVELY "Locked Exclusively"
+    IDS_BLOCK_SYSTEM        "System"
+    IDS_BLOCK_PAGINGFILE    "Paging File"
+    IDS_BLOCK_RESERVEDFORMFT "Reserved for MFT"
+    IDS_BLOCK_INTERNAL      "Internal"
+    IDS_BLOCK_UNKNOWN       "Unknown"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FIRSTCOL            "Start Cluster"
+    IDS_SECONDCOL           "Number of Clusters"
+    IDS_THIRDCOL            "Fragments"
+    IDS_FOURTHCOL           "File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEFRAGVIEW_MENU     "DefragView popup"
+    IDS_DRIVEMAPVIEW_MENU   "DriveMapView popup"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+    Name="Message compiler"
+    Version="8,00"
+    >
+    <Rules>
+        <CustomBuildRule
+            Name="MsgCompiler"
+            DisplayName="Message compiler"
+            CommandLine="mc.exe -s -U  -r $(SolutionDir)\..\Intermediate\Src\$(ProjectName)\ -h $(SolutionDir)\..\Intermediate\Src\$(ProjectName)\ [inputs]"
+            Outputs="$(SolutionDir)\..\Intermediate\Src\$(ProjectName)\$(InputName).h;$(SolutionDir)\..\Intermediate\Src\$(ProjectName)\$(InputName).rc"
+            FileExtensions="*.mc"
+            ExecutionDescription="Compiling messages..."
+            ShowOnlyRuleProperties="false"
+            >
+            <Properties>
+            </Properties>
+        </CustomBuildRule>
+    </Rules>
+</VisualStudioToolFile>

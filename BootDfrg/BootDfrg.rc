@@ -1,0 +1,11 @@
+#include <windows.h>
+#include <ntverp.h>
+
+#include "version.h"
+
+#define VER_FILEDESCRIPTION_STR         "Defragmantation Native Application"
+#define VER_ORIGINALFILENAME_STR        "BootDfrg.exe"
+#define VER_FILETYPE                    VFT_APP
+#define VER_FILESUBTYPE                 VFT2_UNKNOWN
+
+#include "common.ver"

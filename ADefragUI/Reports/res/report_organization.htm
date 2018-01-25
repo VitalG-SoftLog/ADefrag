@@ -1,0 +1,191 @@
+<html>
+<head>
+<title></title>
+
+    <style type="text/css">
+
+
+    p.Header1{
+        color: #000000;
+        font-family : arial, sans-serif;
+        font-size : 28px;
+        font-weight : bold;
+        text-align:center
+    }
+    
+    td.Header2{
+        color: #000000;
+        font-family : arial, sans-serif;
+        font-size : 14px;
+        font-weight : bold;
+    }
+    
+    td.Text1{
+        color: #0000FF;
+        font-family : arial, sans-serif;
+        font-size : 14px;
+        text-align: center
+    }
+    </style>
+
+</head>
+
+<body>
+<center>
+<center>
+<p class="Header1" align="center">File Organization Summary</p>
+<hr />
+
+</center>
+    <table align="center" border="1" style="width: 640px">
+        <tr>
+            <td class="style22" 
+                style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">
+                File Type</td>
+            <td class="style22" 
+                style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">
+                Amount</td>
+            <td class="style22" 
+                style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">
+                Size</td>
+            <td class="style22" 
+                style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">
+                % of Drive</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Rarely Modified</td>
+            <td class="Text1" id="AmountRarely">@AmountRarely@</td>
+            <td class="Text1" id="SizeRarely">@SizeRarely@ bytes</td>
+            <td class="Text1" id="DriveRarely">@DriveRarely@%</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Occasionally Modified</td>
+            <td class="Text1" id="AmountOcc">@AmountOcc@</td>
+            <td class="Text1" id="SizeOcc">@SizeOcc@ bytes</td>
+            <td class="Text1" id="DriveOcc">@DriveOcc@%</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Recently Modified</td>
+            <td class="Text1" id="AmountRecently">@AmountRecently@</td>
+            <td class="Text1" id="SizeRecently">@SizeRecently@ bytes</td>
+            <td class="Text1" id="DriveRecently">@DriveRecently@%</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Directory</td>
+            <td class="Text1" id="AmountDirectory">@AmountDirectory@</td>
+            <td class="Text1" id="SizeDirectory">@SizeDirectory@ bytes</td>
+            <td class="Text1" id="DriveDirectory">@DriveDirectory@%</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Boot</td>
+            <td class="Text1" id="AmountBoot">@AmountBoot@</td>
+            <td class="Text1" id="SizeBoot">@SizeBoot@ bytes</td>
+            <td class="Text1" id="DriveBoot">@DriveBoot@%</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Excluded</td>
+            <td class="Text1" id="AmountExcluded">@AmountExcluded@</td>
+            <td class="Text1" id="SizeExcluded">@SizeExcluded@ bytes</td>
+            <td class="Text1" id="DriveExcluded">@DriveExcluded@%</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Free space</td>
+            <td class="Text1" id="AmountFree">@AmountFree@</td>
+            <td class="Text1" id="SizeFree">@SizeFree@ bytes</td>
+            <td class="Text1" id="DriveFree">@DriveFree@%</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Free space outside the MFT Reserved zone</td>
+            <td class="Text1" id="AmountFreeOutside">@AmountFreeOutside@</td>
+            <td class="Text1" id="SizeFreeOutside">@SizeFreeOutside@ bytes</td>
+            <td class="Text1" id="DriveFreeOutside">@DriveFreeOutside@%</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Free space inside the MFT Reserved zone</td>
+            <td class="Text1" id="AmountFreeInside">@AmountFreeInside@</td>
+            <td class="Text1" id="SizeFreeInside">@SizeFreeInside@ bytes</td>
+            <td class="Text1" id="DriveFreeInside">@DriveFreeInside@%</td>
+        </tr>
+    </table>
+</center>
+
+<center>
+<center>
+<hr />
+</center>
+<p class="Header1" align="center">File Types</p>
+<hr />
+
+</center>
+    <table align="center" border="1" style="width: 640px">
+        <tr>
+            <td class="style22" 
+                style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">
+                File Type</td>
+            <td class="style22" 
+                style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">
+                Size</td>
+            <td class="style22" 
+                style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">
+                Percentage</td>
+            <td class="style22" 
+                style="color:#000000; text-align:center; font-weight: 700; font-style: italic;">
+                Number</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Text</td>
+            <td class="Text1" id="TextSize">@TextSize@ bytes</td>
+            <td class="Text1" id="TextPercent">@TextPercent@%</td>
+            <td class="Text1" id="TextNumber">@TextNumber@</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Graphic</td>
+            <td class="Text1" id="GraphicSize">@GraphicSize@ bytes</td>
+            <td class="Text1" id="GraphicPercent">@GraphicPercent@%</td>
+            <td class="Text1" id="GraphicNumber">@GraphicNumber@</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Program</td>
+            <td class="Text1" id="ProgramSize">@ProgramSize@ bytes</td>
+            <td class="Text1" id="ProgramPercent">@ProgramPercent@%</td>
+            <td class="Text1" id="ProgramNumber">@ProgramNumber@</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Video</td>
+            <td class="Text1" id="VideoSize">@VideoSize@ bytes</td>
+            <td class="Text1" id="VideoPercent">@VideoPercent@%</td>
+            <td class="Text1" id="VideoNumber">@VideoNumber@</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Music</td>
+            <td class="Text1" id="MusicSize">@MusicSize@ bytes</td>
+            <td class="Text1" id="MusicPercent">@MusicPercent@%</td>
+            <td class="Text1" id="MusicNumber">@MusicNumber@</td>
+        </tr>
+        <tr>
+            <td class="Header2">
+                Temporary</td>
+            <td class="Text1" id="TemporarySize">@TemporarySize@ bytes</td>
+            <td class="Text1" id="TemporaryPercent">@TemporaryPercent@%</td>
+            <td class="Text1" id="TemporaryNumber">@TemporaryNumber@</td>
+        </tr>
+        </table>
+<hr />
+
+</body>
+
+</html>

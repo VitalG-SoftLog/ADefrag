@@ -1,0 +1,897 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Ukrainian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+#ifdef _WIN32
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\ADefragUI.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxribbon.rc""              // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Ukrainian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ADefragUI.ico"
+IDR_ADefragReportTYPE   ICON                    "res\\ADefragUIDoc.ico"
+IDI_OUTPUT_WND          ICON                    "res\\output_wnd.ico"
+IDI_OUTPUT_WND_HC       ICON                    "res\\output_wnd_hc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDB_MAIN                BITMAP                  "res\\main.bmp"
+IDB_FILELARGE           BITMAP                  "res\\filelarge.bmp"
+IDB_FILESMALL           BITMAP                  "res\\filesmall.bmp"
+IDB_DEFRAGLARGE         BITMAP                  "res\\defraglarge.bmp"
+IDB_DEFRAGSMALL         BITMAP                  "res\\defragsmall.bmp"
+IDB_BUTTONS             BITMAP                  "res\\buttons.bmp"
+IDB_SCHEDULERLARGE      BITMAP                  "res\\schedulerlarge.bmp"
+IDB_SCHEDULERSMALL      BITMAP                  "res\\schedulersmall.bmp"
+IDB_HELPLARGE           BITMAP                  "res\\helplarge.bmp"
+IDB_HELPSMALL           BITMAP                  "res\\helpsmall.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New &Frame",                  ID_FILE_NEW_FRAME
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Paste &Special...",           ID_EDIT_PASTE_SPECIAL
+        MENUITEM SEPARATOR
+        MENUITEM "Insert &New Object...",       ID_OLE_INSERT_NEW
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Application Look"
+        BEGIN
+            MENUITEM "Windows &2000",               ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "&Windows XP",                 ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 200&5",     ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "&Aqua Style",                 ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ADefragUI...",         ID_APP_ABOUT
+    END
+END
+
+IDR_CNTR_INPLACE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New &Frame",                  ID_FILE_NEW_FRAME
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+END
+
+IDR_POPUP_EDIT MENU 
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_WINDOWS_MENU MENU 
+BEGIN
+    MENUITEM "&New Window",                 ID_WINDOW_NEW
+END
+
+IDR_OUTPUT_POPUP MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Clear",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide",                       ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_THEME_MENU MENU 
+BEGIN
+    MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&Silver Style)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+IDR_POPUP_SCHEDULERVIEW MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "New &One Time Schedule\tCtrl+1", ID_SCHEDULER_NEW_ONETIME
+        MENUITEM "New &Daily Schedule\tCtrl+N", ID_SCHEDULER_NEW_DAILY
+        MENUITEM "New &Weekly Schedule\tCtrl+W", ID_SCHEDULER_NEW_WEEKLY
+        MENUITEM "New &Screen Saver Schedule\tCtrl+S", ID_SCHEDULER_NEW_SCREENSAVER
+        MENUITEM SEPARATOR
+        MENUITEM "&Run Schedule Now\tCtrl+R",   ID_SCHEDULER_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "&Enable/Disable\tCtrl+E",     ID_SCHEDULER_ENABLE
+        MENUITEM "&Modify Schedule\tCtrl+M",    ID_SCHEDULER_EDIT
+        MENUITEM "&Delete Schedule\tCtrl+D",    ID_SCHEDULER_DELETE
+    END
+END
+
+IDR_TRAY_MENU MENU 
+BEGIN
+    POPUP "Tray"
+    BEGIN
+        MENUITEM "&Open....",                   ID_APP_OPEN
+        POPUP "&Defrag"
+        BEGIN
+            MENUITEM "&Analyze...",                 ID_DEFRAG_ANALYZE
+            MENUITEM "&Free Space...",              ID_DEFRAG_FREE_SPACE
+            MENUITEM "S&imple Defrag...",           ID_DEFRAG_SIMPLE
+            MENUITEM "Most Preferred...",           ID_DEFRAG_MOSTRECOMMENDED
+            MENUITEM SEPARATOR
+            MENUITEM "&Pause Defragmentation",      ID_DEFRAG_PAUSE
+            MENUITEM "&Stop Defragmentation",       ID_DEFRAG_STOP
+        END
+        MENUITEM "&About....",                  ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+END
+
+IDR_RIBBON_DEFRAG_ORDER MENU 
+BEGIN
+    MENUITEM "By &Name",                    ID_DEFRAG_BY_NAME
+    MENUITEM "By &Access",                  ID_DEFRAG_BY_ACCESS
+    MENUITEM "By &Modification",            ID_DEFRAG_BY_MODIFY
+    MENUITEM "By &Creation",                ID_DEFRAG_BY_CREATION
+    MENUITEM "By &Size",                    ID_DEFRAG_BY_SIZE
+    MENUITEM "&Force Together",             ID_DEFRAG_BY_FORCE_FILL
+END
+
+IDR_POPUP_DFRAGVIEW MENU 
+BEGIN
+    POPUP "DefragView popup"
+    BEGIN
+        MENUITEM "&Analyze",                    ID_DEFRAG_ANALYZE
+        MENUITEM "&Free Space",                 ID_DEFRAG_FREE_SPACE
+        MENUITEM "S&imple Defrag",              ID_DEFRAG_SIMPLE
+        MENUITEM "Recommended",                 ID_DEFRAGVIEWPOPUP_RECOMMEND
+        POPUP "&Disk SmartPlacement"
+        BEGIN
+            MENUITEM "By &Name",                    ID_DEFRAG_BY_NAME
+            MENUITEM "By &Access",                  ID_DEFRAG_BY_ACCESS
+            MENUITEM "By &Modification",            ID_DEFRAG_BY_MODIFY
+            MENUITEM "By &Creation",                ID_DEFRAG_BY_CREATION
+            MENUITEM "By &Size",                    ID_DEFRAG_BY_SIZE
+            MENUITEM "&Force Together",             ID_DEFRAG_BY_FORCE_FILL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Pause",                      ID_DEFRAG_PAUSE
+        MENUITEM "&Stop",                       ID_DEFRAG_STOP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    "A",            ID_DEFRAG_ANALYZE,      VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_DEFRAG_FREE_SPACE,   VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_DEFRAG_SIMPLE,       VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_DEFRAG_STOP,         VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "G",            ID_DEFRAG_RECOMMEND,    VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_CNTR_INPLACE ACCELERATORS 
+BEGIN
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    "A",            ID_DEFRAG_ANALYZE,      VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_DEFRAG_FREE_SPACE,   VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_DEFRAG_SIMPLE,       VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_DEFRAG_STOP,         VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "G",            ID_DEFRAG_RECOMMEND,    VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_POPUP_SCHEDULERVIEW ACCELERATORS 
+BEGIN
+    VK_DELETE,      ID_SCHEDULER_DELETE,    VIRTKEY, SHIFT
+    "1",            ID_SCHEDULER_NEW_ONETIME, VIRTKEY, CONTROL
+    "N",            ID_SCHEDULER_NEW_DAILY, VIRTKEY, CONTROL
+    "W",            ID_SCHEDULER_NEW_WEEKLY, VIRTKEY, CONTROL
+    "S",            ID_SCHEDULER_NEW_SCREENSAVER, VIRTKEY, CONTROL
+    "R",            ID_SCHEDULER_RUN,       VIRTKEY, CONTROL
+    "E",            ID_SCHEDULER_ENABLE,    VIRTKEY, CONTROL
+    "M",            ID_SCHEDULER_EDIT,      VIRTKEY, CONTROL
+    "D",            ID_SCHEDULER_DELETE,    VIRTKEY, CONTROL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ADefrag"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "ADefrag, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_HELPVIEW DIALOGEX 0, 0, 384, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "ADefrag Help View"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "ADefrag, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,42,26,114,8
+    PUSHBUTTON      "ADefrag &Product Info",IDC_URL_PRODUCT,7,43,200,12,BS_FLAT,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Contact ADefrag Technical &Support",IDC_URL_SUPPORT,7,58,200,12,BS_FLAT,WS_EX_TRANSPARENT
+    LTEXT           "License Info:",IDC_STATIC,7,88,106,8
+    LTEXT           "The Trial version",IDC_LICENSE_INFO,34,100,343,40
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "ADefrag Co."
+            VALUE "FileDescription", "ADefrag GUI"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ADefragUI.exe"
+            VALUE "LegalCopyright", "(c) ADefrag Co.  All rights reserved."
+            VALUE "OriginalFilename", "ADefragUI.exe"
+            VALUE "ProductName", "ADefrag"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_HELPVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 377
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    ID_REPORT_PRINT         "Print current report\nPrint\\Ctrl+P"
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+    ID_REPORT_SAVE          "Save current report\nSave\tCtrl+S"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "ADefrag\n\nADefrag\nADefrag Report Files (*.adefrag)\n.adefrag\nADefrag.Document\nADefrag.Document"
+    IDS_TASKPANE_WND        "Tasks Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ADefrag"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_SEND_MAIL       "Send the active document through electronic mail\nSend Mail"
+    ID_FILE_NEW_FRAME       "Create a new frame\nNew Frame"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source\nPaste Link"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options\nPaste Special"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new embedded object\nNew Object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type\nConvert Object"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+    57873                   "Activate embedded or linked object"
+    57874                   "Activate embedded or linked object"
+    57875                   "Activate embedded or linked object"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_PANE1        "Ready"
+    IDS_STATUS_PANE2        "Pane 2"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_OUTPUTWND       "Show or hide the Output window\nToggle Output Window"
+    ID_VIEW_TASKPANE        "Show or hide the Tasks pane\nToggle Tasks Pane"
+    IDS_OUTPUT_WND          "Output"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_STYLE_DESC   "Choose one of the Office 2007 themes"
+    IDS_RIBBON_STATUSBAR    "Status Bar"
+    IDS_RIBBON_VIEW         "Settings"
+    IDS_BUILD_TAB           "Build"
+    IDS_DEBUG_TAB           "Debug"
+    IDS_FIND_TAB            "Find"
+    IDS_EDIT_MENU           "Edit"
+    ID_DEFRAG_ANALYZE       "Analyze the selected disk\nAnalyze"
+    ID_DEFRAG_FREE_SPACE    "Make a Free Space defragmentation for selected disk\nFree Space"
+    ID_DEFRAG_SIMPLE        "Simple Defragmentation for selected disk\nSimple Defragmentation"
+    ID_DEFRAG_PAUSE         "Pause the current operation\nPause"
+    ID_DEFRAG_STOP          "Stop the current operation\nStop"
+    IDS_RIBBON_SETTINGS     "Settings"
+    ID_SCHEDULER_NEW_ONETIME "Create new one time Schedule\nOne Time\tCtrl+1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SCHEDULER_COL_NEXTRUN "Next Run"
+    ID_DEFRAG_COMPUTER      "Analyze and Defrag the My Computer\nDefrag My Computer"
+    ID_DEFRAG_ORDER         "Defrag in selected Order\nOrder Defrag"
+    ID_DEFRAG_BY_NAME       "Defragmentation By Name Order Method for selected disk\nName Order"
+    ID_DEFRAG_BY_ACCESS     "Defragmentation By Access Order Method for selected disk\nAccess Order"
+    ID_DEFRAG_BY_MODIFY     "Defragmentation By Modify Order Method for selected disk\nModify Order"
+    ID_DEFRAG_BY_CREATION   "Defragmentation By Creation Order Method for selected disk\nCreation Order"
+    ID_DEFRAG_BY_SIZE       "Defragmentation By Size Order Method for selected disk\nSize Order"
+    ID_DEFRAG_BY_FORCE_FILL "Defragmentation By Force Fill Method for selected disk\nForce Together"
+    IDS_RIBBON_REPORTS      "Reports\nr"
+    IDS_RIBBON_REPORTS_CONTEXT "Report tools"
+    IDS_RIBBON_REPORTS_PANEL "Reports"
+    IDS_RIBBON_REPORT_SAVE  "Save\ns"
+    IDS_RIBBON_REPORT_PRINT "Print\np"
+    IDS_RIBBON_REPORT_PRINT_SETUP "Print Setup\nu"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_MAIN         "Main"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_SCHEDULE_NEW_WEEKLY "Weekly\nw"
+    IDS_RIBBON_SCHEDULE_NEW_SCREENSAVER "Screen Saver\ns"
+    IDS_RIBBON_SCHEDULER_RUN_PANEL "Run Schedule"
+    IDS_RIBBON_SCHEDULE_RUN "Run now\nr"
+    IDS_RIBBON_VIEW_STYLE   "Style"
+    IDS_RIBBON_SCHEDULER_EDIT_PANEL "Edit Existing Schedule"
+    IDS_RIBBON_SCHEDULE_ENABLE "Enable/Disable\nb"
+    IDS_RIBBON_SCHEDULE_EDIT "Edit\ne"
+    IDS_RIBBON_SCHEDULE_DELETE "Delete\nd"
+    IDS_RIBBON_DEFRAG_COMPUTER "My Computer\nm"
+    IDS_RIBBON_DEFRAG_ORDER "Disk Smart Placement\no"
+    IDS_RIBBON_WINDOW       "Window\nw"
+    IDS_RIBBON_WINDOWS      "Windows\ni"
+    IDS_RIBBON_STYLE        "Style"
+    IDS_RIBBON_STYLE_TIP    "Modify Visual Style"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_ABOUT        "&About"
+    IDS_RIBBON_EXIT         "E&xit"
+    IDS_RIBBON_DEFRAG       "&Defragmentation"
+    IDS_RIBBON_DEFRAG_PANEL "Analyze and Defrag"
+    IDS_RIBBON_DEFRAG_ANALYZE "Analyze\na"
+    IDS_RIBBON_FREE_SPACE   "Free Space\nf"
+    IDS_RIBBON_DEFRAG_SIMPLE "Simple Defrag\nd"
+    IDS_RIBBON_PAUSE        "Pause\np"
+    IDS_RIBBON_STOP         "Stop\ns"
+    IDS_RIBBON_OUTPUT_WINDOW "Output window"
+    IDS_RIBBON_SCHEDULER    "&Scheduler"
+    IDS_RIBBON_SCHEDULER_NEW_PANEL "Create New Schedule"
+    IDS_RIBBON_PROGRESS_PANEL "Progress"
+    IDS_RIBBON_PROGRESS_CURRENT_LABEL "Current Progress:"
+    IDS_RIBBON_SCHEDULE_NEW_ONETIME "One Time\no"
+    IDS_RIBBON_SCHEDULE_NEW_DAILY "Daily\nd"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEFRAG_CMD_FREE_SPACE "Free Space"
+    IDS_DEFRAG_CMD_SMART_BY_NAME "Defrag by Name"
+    IDS_DEFRAG_CMD_SMART_BY_ACCESS "Defrag by Access"
+    IDS_DEFRAG_CMD_SMART_BY_MODIFY "Defrag by Modify"
+    IDS_DEFRAG_CMD_SMART_BY_SIZE "Defrag by Size"
+    IDS_DEFRAG_CMD_SMART_BY_CREATE "Defrag by Create"
+    IDS_DEFRAG_CMD_FORCE_TOGETHER "Force Fill Method"
+    IDS_RIBBON_HELP         "&Help"
+    IDS_RIBBON_HELP_PANEL   "Help and About"
+    IDS_RIBBON_HELP_ACTION  "&Help\nh"
+    IDS_RIBBON_LICENSE_PANEL "License"
+    IDS_LICENSE_INFO        "License:\nTrial version"
+    IDS_RIBBON_UPDATE_PANEL "Update"
+    IDS_VERSION_INFO        "Version: 1.0"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_UPDATE       "&Update now\nu"
+    IDS_OVERAL_FRAGMENTATION "Overall Fragmentation for disk %s is %.03f%%."
+    IDS_OVERAL_RECOMEND_GOOD "Fragmentation level is Good for now."
+    IDS_OVERAL_RECOMEND_POOR "Warning!\nRecommended Action: Defragment Only."
+    IDS_OVERAL_RECOMEND_BAD "Critical!\nORecommended Action: Force Together, than Disk Smart Placement."
+    IDS_MFT_FRAGMENTATION   "MFT fragmentation: %I64d fragments (%.03f%%), Metadata fragmentation - %.03f%%."
+    IDS_MFT_RECOMEND_GOOD   "MFT fragmentation level is Good for now."
+    IDS_MFT_RECOMEND_POOR   "Warning!\nRecommended Action: Smart Placement, Run Boot time if Metadata is fragmented."
+    IDS_MFT_RECOMEND_BAD    "Critical!\nORecommended Action: Smart Placement, Run Boot time if Metadata is fragmented."
+    IDS_PAGEFILE_FRAGMENTATION 
+                            "Paging File Fragmentation: %I64d fragments (%.03f%%)"
+    IDS_PAGEFILE_RECOMEND_GOOD 
+                            "Paging file fragmentation level is Good for now."
+    IDS_PAGEFILE_RECOMEND_POOR 
+                            "Warning!\nRecommended Action: Boot Time Defrag."
+    IDS_PAGEFILE_RECOMEND_BAD 
+                            "Critical!\nORecommended Action: Boot Time Defrag."
+    IDS_FREESPACE_FRAGMENTATION 
+                            "Free Space: %.03f%% free space (fragmentation: %.03f%%)"
+    IDS_FREESPACE_RECOMEND_GOOD 
+                            "Free space fragmentation level is Good for now."
+    IDS_FREESPACE_RECOMEND_POOR 
+                            "Warning!\nRecommended Action: Free Space Consolidation."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_REPORT_PRINT_PREVIEW "Print Preview\nw"
+    ID_REPORT_PRINT_SETUP   "Print Setup\nPrint Setup"
+    ID_REPORT_PRINT_PREVIEW "Print Preview\nPrint Preview"
+    ID_APP_UPDATE           "Update ADefrag now\nUpdate now"
+    IDS_RIBBON_BUY          "&Purchase now\np"
+    ID_APP_BUY              "Purchase ADefrag now\nBuy now\tCtrl+B"
+    IDS_DRIVELIST_COL_NAME  "Name"
+    IDS_DRIVELIST_COL_TYPE  "Type"
+    IDS_DRIVELIST_COL_LABEL "Label"
+    IDS_DRIVELIST_COL_FILESYS "File System"
+    IDS_DRIVELIST_COL_SIZE  "Total bytes"
+    IDS_DRIVELIST_COL_FREE  "Free bytes"
+    IDS_DRIVELIST_COL_STATUS "Status"
+    IDS_DRIVELIST_COL_LAST  "Last Defragmented"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SCHEDULER_NEW_DAILY  "Create new daily Schedule\nDaily\tCtrl+N"
+    ID_SCHEDULER_NEW_WEEKLY "Create new weekly Schedule\nWeekly\tCtrl+W"
+    ID_SCHEDULER_NEW_SCREENSAVER 
+                            "Create new Screen Saver Schedule\nScreen Saver\tCtrl+S"
+    ID_SCHEDULER_RUN        "Run Schedule Now\nRun now\tCtrl+R"
+    ID_VIEW_STYLE_BLOCKSIZECB "Block size:"
+    ID_VIEW_STYLE_SHOWLEGEND "Show legend"
+    ID_VIEW_STYLE_SETDEFAULT "Set default colors"
+    ID_SCHEDULER_ENABLE     "Enable/Disable selected Schedule\nEnable/Disable\tCtrl+E"
+    ID_SCHEDULER_EDIT       "Edit selected Schedule\nModify\tCtrl+M"
+    ID_SCHEDULER_DELETE     "Delete selected Schedule\nDelete\tCtrl+D"
+    IDS_SCHEDULERVIEW_MENU  "Scheduler"
+    IDS_SCHEDULER_COL_STATUS "Status"
+    IDS_SCHEDULER_COL_ACTION "Action"
+    IDS_SCHEDULER_COL_TYPE  "Type"
+    IDS_SCHEDULER_COL_LASTRUN "Last Run"
+    IDS_SCHEDULER_COL_RUNSTATUS "Last Run Status"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRIVELIST_COL_FRAGMENTED "Fragmentation"
+    IDS_SERVICE_CONNECTION_ERROR 
+                            "Failed connect to ADefrag Service. Possible ADefrag service not started or not installed correctly. Please reinstall application and try again."
+    IDS_DRIVE_REMOVABLE     "removable"
+    IDS_DRIVE_FIXED         "fixed"
+    IDS_DRIVE_REMOTE        "remote"
+    IDS_DRIVE_NO_ROOT_DIR   "mounted"
+    IDS_DRIVE_CDROM         "CD/DVD/BD-ROM"
+    IDS_DRIVE_RAMDISK       "RAM disk"
+    IDS_STATE_READY         "Ready"
+    IDS_NOT_ANALYSED_YET    "Not Analysed yet"
+    IDS_DEFRAG_CMD_INIT_JOB "Initializing"
+    IDS_DEFRAG_CMD_ANALIZE_VOLUME "Analyzing"
+    IDS_DEFRAG_CMD_DEBUG1   "Simple Defrag"
+    IDS_DEFRAG_CMD_SIMPLE_DEFRAG "Simple Defrag"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FREESPACE_RECOMEND_BAD 
+                            "Critical!\nORecommended Action: Force Together and Free Space Consolidation."
+    IDS_HEALTH_EXCELLENT    "Excellent"
+    IDS_HEALTH_EXCELLENT_DESC 
+                            "All files are almost completely defragmented. This is the ideal condition and can only be achieved and maintained through regular defragmentation."
+    IDS_HEALTH_GOOD         "Good"
+    IDS_HEALTH_GOOD_DESC    "This level is reasonable, and means that your hard disks are in good condition."
+    IDS_HEALTH_PASSED       "Passed"
+    IDS_HEALTH_PASSED_DESC  "Your system is working more slowly than normal because of heavy fragmentation. Defragment regularly. This will keep your system running at a good speed."
+    IDS_HEALTH_POOR         "Poor"
+    IDS_HEALTH_POOR_DESC    "Your system is very heavily fragmented and is suffering from very serious performance loss. You should defragment your system right away and create jobs for regular defragmentation. Compare the fragmentation levels before and after the defragmentation run."
+    IDS_HEALTH_DRAMATIC     "Dramatic"
+    IDS_HEALTH_DRAMATIC_DESC 
+                            "Almost all of your files are fragmented - you've probably never, or very seldom, defragmented your system. The effect on your system is dramatic."
+    IDS_REPORT_DRIVE_INFO   "System and Drive Information"
+    IDS_REPORT_FRAGMENTATION "Fragmentation"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REPORT_DRIVE_HEALTH "Drive Health"
+    IDS_REPORT_FILE_ORGANIZATION "File Organization Summary"
+    IDS_REPORT_100_FRAGMENTED "100 most fragmented files"
+    IDS_REPORT_EXCLUDED     "Excluded Files"
+    IDS_TASKPANE_MAIN_TASKS "Main Tasks"
+    IDS_TASKPANE_MAIN_DETAILS "Details"
+    IDS_TASKPANE_DETAILS_INFO 
+                            "Please select a disk in a Disks List and Run Analysis for detect current Defragmentation Level.\n\nAfter that you can to select the more effectively defragmentation algorithm and Start it for improve a drive performance and reliability."
+    IDS_TASKPANE_RESULT     "Result and Reliability"
+    IDS_TASKPANE_RESULT_NOTE 
+                            "Please select a disk in a Disks List and Run Analysis for get full Result and Reliability information about selected disk."
+    IDS_TASKPANE_RESULT_MAIN "Result"
+    IDS_TASKPANE_RESULT_RECOMEND "Recomendations"
+    IDS_TASKPANE_RESULT_RELIABILITY "Reliability"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TASKPANE_RESULT_MFT "MFT Fragmentation"
+    IDS_TASKPANE_RESULT_PAGEFILE "Paging File Fragmentation"
+    IDS_TASKPANE_RESULT_FREE "Free Space"
+    IDS_RIBBON_DEFRAG_RECOMMEND "Recommended Defrag\nd"
+    ID_DEFRAG_RECOMMEND     "Recommended Defragmentation for selected disk\nRecommended Defragmentation\tCtrl+G"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\ADefragUI.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxolecl.rc"       // OLE container resources
+#if !defined(_AFXDLL)
+#include "afxribbon.rc"              // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>System and Drive Information</title>
+
+</head>
+
+<style type="text/css">
+    td.Header1{
+        color: #000000;
+        font-family : arial, sans-serif;
+        font-size : 24px;
+        font-weight : bold;
+    }
+    td.Header2{
+        color: #000000;
+        font-family : arial, sans-serif;
+        font-size : 14px;
+        font-weight : bold;
+    }
+    td.Text1{
+        color: #0000FF;
+        font-family : arial, sans-serif;
+        font-size : 14px;
+    }
+    p.Header1{
+        color: #000000;
+        font-family : arial, sans-serif;
+        font-size : 28px;
+        font-weight : bold;
+        text-align:center
+    }
+    
+    </style>
+
+<body>
+<p class="Header1" align="center">System&nbsp;and&nbsp;Drive&nbsp;Information</p>
+<hr />
+<p class="Header2" align="center">Disk @Name1@ Total size: @Size1@ bytes</p>
+<table align="center" width="640">
+    <tr>
+        <td><img src="@img@" /></td>
+        <td class="Text1">
+            <img src="img\space_legend1.bmp" />&nbsp; - Free space @Free@ bytes<br />
+            <img src="img\space_legend2.bmp" />&nbsp; - Used space @Used@
+            bytes
+        </td>
+    </tr>
+</table>
+<hr />
+
+<table border="1" align="center" style="width: 640px">
+    <tr>
+        <td class="Header2">Computer&nbsp;Name</td><td class="Text1">@Name@</td>
+    </tr>
+    <tr>
+        <td class="Header2">Analyzed</td><td class="Text1">@Analyzed@</td>
+    </tr>
+    <tr>
+        <td class="Header2">Drive ID</td><td class="Text1">@DriveID@</td>
+    </tr>
+    <tr>
+        <td class="Header2">Mount Point</td><td class="Text1">@MountPoint@</td>
+    </tr>
+    <tr>
+        <td class="Header2">Drive Name</td><td class="Text1">@DriveName@</td>
+    </tr>
+    <tr>
+        <td class="Header2">PD&nbsp;Drive&nbsp;Name&nbsp;&nbsp;&nbsp;</td><td class="Text1">@PDDriveName@</td>
+    </tr>
+    <tr>
+        <td class="Header2">OS</td><td class="Text1">@OS@</td>
+    </tr>
+    <tr>
+        <td class="Header2">File System</td><td class="Text1">@FileSystem@</td>
+    </tr>
+    <tr>
+        <td class="Header2">Drive Size</td><td class="Text1">@Size@ bytes</td>
+    </tr>
+    <tr>
+        <td class="Header2">Cluster Size</td><td class="Text1">@ClusterSize@ bytes</td>
+    </tr>
+</table>
+
+<hr />
+</body>
+
+
+</html>

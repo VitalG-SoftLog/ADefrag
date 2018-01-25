@@ -1,0 +1,265 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Ukrainian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+#ifdef _WIN32
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Ukrainian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SCHEDULE_DRIVES DIALOGEX 0, 0, 287, 230
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+EXSTYLE WS_EX_TRANSPARENT
+CAPTION "1. Select Drives"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Select &Drives:",IDC_STATIC,7,7,273,130
+    CONTROL         "&All Drives",IDC_DRIVES_ALL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,21,259,10
+    CONTROL         "Only &Selected Drives:",IDC_DRIVE_SELECTED,"Button",BS_AUTORADIOBUTTON,14,35,259,10
+    CONTROL         "",IDC_DRIVES_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_CHECKBOXES | TVS_TRACKSELECT | TVS_INFOTIP | WS_BORDER | WS_HSCROLL | WS_TABSTOP,14,49,259,80
+    GROUPBOX        "Defragmentation &Sequence:",IDC_STATIC,7,141,273,55
+    CONTROL         "&One by one (Defragment next drive after complete previous)",IDC_SEQUENCE_ONEBYONE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,153,259,10
+    CONTROL         "At One &Time (Defragment all selectec drives at the same time)",IDC_SEQUENCE_PARALLEL,
+                    "Button",BS_AUTORADIOBUTTON,14,167,259,10
+    CONTROL         "&Auto Detection (ADefrag will be decide for you)",IDC_SEQUENCE_AUTO,
+                    "Button",BS_AUTORADIOBUTTON,14,181,259,10
+END
+
+IDD_SCHEDULE_METHOD DIALOGEX 0, 0, 287, 230
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+EXSTYLE WS_EX_TRANSPARENT
+CAPTION "2. Defragmentation Method"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Please Select the Defragmentation Metho&d:",-1,7,7,273,131
+    CONTROL         "&Simple Defragmentation",IDC_METHOD_SIMPLE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,21,266,10
+    CONTROL         "Fr&ee Space Consolidation",IDC_METHOD_FREE_SPACE,"Button",BS_AUTORADIOBUTTON,14,35,266,10
+    CONTROL         "Defragmentation By &Name",IDC_METHOD_BYNAME,"Button",BS_AUTORADIOBUTTON,14,49,266,10
+    CONTROL         "Defragmentation By &Access",IDC_METHOD_BYACCESS,"Button",BS_AUTORADIOBUTTON,14,63,266,10
+    CONTROL         "Defragmentation By &Modification Date/Time",IDC_METHOD_BYMODIFY,
+                    "Button",BS_AUTORADIOBUTTON,14,77,266,10
+    CONTROL         "Defragmentation By &Creation Date/Time",IDC_METHOD_BYCREATE,
+                    "Button",BS_AUTORADIOBUTTON,14,91,266,10
+    CONTROL         "Defragmentation By &Size",IDC_METHOD_BYSIZE,"Button",BS_AUTORADIOBUTTON,14,105,266,10
+    CONTROL         "Defragmentation By &Force Fill Method",IDC_METHOD_BYFORCE,
+                    "Button",BS_AUTORADIOBUTTON,14,119,266,10
+    GROUPBOX        "Defragmentation &Mode:",IDC_DEFRAGMENTATION_MODE,7,144,273,60,WS_GROUP | WS_TABSTOP
+    CONTROL         "&Normal Mode",IDC_DEFRAG_MODE_NORMAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,158,266,10
+    CONTROL         "&Smart Mode",IDC_DEFRAG_MODE_SMART,"Button",BS_AUTORADIOBUTTON,14,172,266,10
+    CONTROL         "&Boot Mode",IDC_DEFRAG_MODE_BOOT,"Button",BS_AUTORADIOBUTTON,14,186,266,10
+END
+
+IDD_SCHEDULE_TIME DIALOGEX 0, 0, 287, 230
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+EXSTYLE WS_EX_TRANSPARENT
+CAPTION "3. Date and Time"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Please Select the Defragmentation Start &Date:",IDC_STATIC,7,7,273,122
+    CONTROL         "",IDC_MONTHCALENDAR,"SysMonthCal32",MCS_WEEKNUMBERS | WS_GROUP | WS_TABSTOP,14,20,259,100
+    LTEXT           "Defragmentation Start &Time:",IDC_STATIC,7,137,95,8
+    CONTROL         "",IDC_DATETIMEPICKER,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,106,134,60,15
+    LTEXT           "&Repeat Every X Days:",IDC_STATIC_DAYPERIOD,7,154,95,8
+    EDITTEXT        IDC_EDIT_DAYPERIOD,105,151,60,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_DAYPERIOD,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,153,151,12,14
+    LTEXT           "Defragmentation &Week Day:",IDC_STATIC_WEEKDAY,7,154,95,8
+    COMBOBOX        IDC_COMBO_WEEKDAY,105,151,60,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Shutdown when complete Defragmentation process",IDC_CHECK_SHUTDOWN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,196,273,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SCHEDULE_DRIVES, DIALOG
+    BEGIN
+        RIGHTMARGIN, 280
+        VERTGUIDE, 7
+        VERTGUIDE, 14
+        VERTGUIDE, 273
+        BOTTOMMARGIN, 226
+        HORZGUIDE, 199
+    END
+
+    IDD_SCHEDULE_METHOD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 280
+        VERTGUIDE, 7
+        VERTGUIDE, 14
+        VERTGUIDE, 280
+        BOTTOMMARGIN, 226
+        HORZGUIDE, 199
+    END
+
+    IDD_SCHEDULE_TIME, DIALOG
+    BEGIN
+        RIGHTMARGIN, 280
+        VERTGUIDE, 7
+        VERTGUIDE, 14
+        VERTGUIDE, 273
+        BOTTOMMARGIN, 226
+        HORZGUIDE, 199
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SCHEDULE_TIME DLGINIT
+BEGIN
+    IDC_COMBO_WEEKDAY, 0x403, 7, 0
+0x6f4d, 0x646e, 0x7961, "\000" 
+    IDC_COMBO_WEEKDAY, 0x403, 8, 0
+0x7554, 0x7365, 0x6164, 0x0079, 
+    IDC_COMBO_WEEKDAY, 0x403, 10, 0
+0x6557, 0x6e64, 0x7365, 0x6164, 0x0079, 
+    IDC_COMBO_WEEKDAY, 0x403, 9, 0
+0x6854, 0x7275, 0x6473, 0x7961, "\000" 
+    IDC_COMBO_WEEKDAY, 0x403, 7, 0
+0x7246, 0x6469, 0x7961, "\000" 
+    IDC_COMBO_WEEKDAY, 0x403, 9, 0
+0x6153, 0x7574, 0x6472, 0x7961, "\000" 
+    IDC_COMBO_WEEKDAY, 0x403, 7, 0
+0x7553, 0x646e, 0x7961, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_SCHEDULE_SHEET      "Schedule Properties"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PAGE_DISKS_TITLE    "Stage 1. Select Drives for Defragmentation Schedule"
+    IDS_PAGE_METHODS_TITLE  "Stage 2. Select the Defragmentation Schedule Method"
+    IDS_PAGE_TIME_TITLE     "Stage 3. Select the Defragmentation Schedule Time and Period"
+    IDS_TASK_ACTIVE         "Active"
+    IDS_TASK_DISABLED       "Disabled"
+    IDS_SCHEDULE_ACTION_ALLDISKS_FORMAT "%s for All Disks"
+    IDS_SCHEDULE_ACTION_SELDISKS_FORMAT "%s for Disks: %s"
+    IDS_DEFRAG_UNKNOWN      "Unknown Defragmentation Method"
+    IDS_DEFRAG_SIMPLE       "Simple Defragmentation"
+    IDS_DEFRAG_FREE_SPACE   "Free Space Consolidation"
+    IDS_DEFRAG_BY_NAME      "Defragmentation By Name"
+    IDS_DEFRAG_BY_ACCESS    "Defragmentation By Access"
+    IDS_DEFRAG_BY_MODIFY    "Defragmentation By Modification"
+    IDS_DEFRAG_BY_CTEATE    "Defragmentation By Creation"
+    IDS_DEFRAG_BY_SIZE      "Defragmentation By Size"
+    IDS_DEFRAG_BY_FORCE     "Defragmentation By Force Fill Method"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PERIOD_ONETIME      "One Time"
+    IDS_PERIOD_DAILY        "Daily"
+    IDS_PERIOD_DAYS         "Each %d days"
+    IDS_PERIOD_WEEKLY       "Weekly at %s"
+    IDS_PERIOD_SCREENSAVER  "Screen Saver"
+    IDS_WEEKDAY_UNKNOWN     "Unknown"
+    IDS_WEEKDAY_MONDAY      "Monday"
+    IDS_WEEKDAY_TUESDAY     "Tuesday"
+    IDS_WEEKDAY_WEDNESDAY   "Wednesday"
+    IDS_WEEKDAY_THURSDAY    "Thursday"
+    IDS_WEEKDAY_FRIDAY      "Friday"
+    IDS_WEEKDAY_SATURDAY    "Saturday"
+    IDS_WEEKDAY_SUNDAY      "Sunday"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RUNSTATUS_PROJECTED "Projected"
+    IDS_RUNSTATUS_COMPLETED "Completed"
+    IDS_RUNSTATUS_SKIPPED   "Skipped"
+    IDS_RUNSTATUS_CANCELLED "Cancelled"
+    IDS_RUNSTATUS_DEFERRED  "Deferred"
+    IDS_RUNSTATUS_INPROGRESS "In Progress"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

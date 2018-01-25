@@ -1,0 +1,318 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Ukrainian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+#ifdef _WIN32
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Ukrainian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HEADERPAT_1         BITMAP                  "res\\HeaderPat_1.bmp"
+IDB_HEADERPAT_2         BITMAP                  "res\\HeaderPat_2.bmp"
+IDB_HEADERPAT_3         BITMAP                  "res\\HeaderPat_3.bmp"
+IDB_HEADERPAT_4         BITMAP                  "res\\HeaderPat_4.bmp"
+IDB_OPTIONS             BITMAP                  "res\\options.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_POPULAR_PAGE DIALOGEX 0, 0, 293, 206
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Popular"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Color scheme:",IDC_STATIC,30,20,46,8
+    COMBOBOX        IDC_COLOR_SCHEME,85,18,75,203,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sc&reentip style:",IDC_STATIC,30,38,49,8
+    COMBOBOX        IDC_SCREENTIP_STYLE,85,36,174,203,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Options for Working with ADefrag",IDC_BANER,7,0,283,13
+    CONTROL         "&Enable Auto Update",IDC_AUTO_UPDATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,140,237,10
+    LTEXT           "Update Main Settings",IDC_UPDATE_BANER,7,120,283,14
+    CONTROL         "Enable &Boot File Optimization",IDC_BOOT_OPTIMIZATION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,86,234,10
+    LTEXT           "Boot File Optimization Settings",IDC_STARTUP_BANER,4,66,283,14
+    LTEXT           "Application recommends letting Application Manage Boot files only",IDC_STATIC,42,98,246,15
+END
+
+IDD_LOG_PAGE DIALOGEX 0, 0, 293, 206
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Log"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Log Settings: Detailed information about ADefrag operations.",IDC_LOG_BANER,7,0,283,14
+    CONTROL         "Log to &Application's Log",IDC_APP_LOG_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,20,213,10
+    CONTROL         "Log to Application &Event Log",IDC_EVENT_LOG_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,35,213,10
+    DEFPUSHBUTTON   "&View Log",IDC_VIEW_LOG,179,50,50,14
+    PUSHBUTTON      "&Clear Log",IDC_CLEAR_LOG,236,50,50,14
+END
+
+IDD_SCHEDULER_PAGE DIALOGEX 0, 0, 400, 206
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Scheduler"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Scheduler Settings",IDC_BANER,7,0,283,14
+    CONTROL         "Do Not start defragmentation pass when on battery &power",IDC_NOT_START_BATTERY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,20,363,10
+    CONTROL         "&Stop Defragmentation schedules if computer switches to battery power",IDC_STOP_BATTERY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,35,363,10
+    CONTROL         "&Wake computer from standby/hibernation - A computer may be in standby or hibernation when a schedule was supposed to run. This rule allow you to set how Application should handle this condition.",IDC_WAKE_RUN,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,30,50,363,16
+    CONTROL         "&Run Missed Schedules - A computer may be turned off when a schedule was supposed to run. This rule allow you to set how Application should handle missed schedules.",IDC_RUN_MISSED,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,30,82,363,16
+    LTEXT           "Some computer can be woken up from this state - this is hardware dependent",IDC_STATIC,41,68,351,8
+END
+
+IDD_DEFRAG_PAGE DIALOGEX 0, 0, 400, 230
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Defrag"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Defrag Main Settings",IDC_BANER,7,0,283,14
+    CONTROL         "Allow application to defrag &flash drives",IDC_ALLOW_DEFRAG_FLASH,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,20,363,10
+    CONTROL         "Allow application to defrag &removable drives",IDC_ALLOW_DEFRAG_REMOVABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,35,363,10
+    CONTROL         "Enable Defragmentation &Threshold, %",IDC_ENABLE_THRESHOLD,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,50,135,10
+    EDITTEXT        IDC_THRESHOLD,171,48,73,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_THRESHOLD_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HOTTRACK | WS_DISABLED,234,48,11,14
+    CONTROL         "Aggressively Consolidate Free Space",IDC_AGGRESSIVELY_FREE_SPACE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,65,363,10
+    CONTROL         "Adjust the defragmentation engine CPU priority",IDC_ADJUST_CPU_PRIORITY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,80,363,10
+    CONTROL         "Normal",IDC_PRIORITY_NORMAL,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP | WS_TABSTOP,55,92,38,10
+    CONTROL         "Idle",IDC_PRIORITY_IDLE,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,105,92,27,10
+    CONTROL         "Turbo",IDC_PRIORITY_TURBO,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,155,92,35,10
+    CONTROL         "Throttle defragmentation I/O",IDC_THROTTLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,105,363,10
+    CONTROL         "Enable Volume Shadow Copy Service (VSS) Defragmentation",IDC_VSS_ENABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,120,363,10
+    CONTROL         "Stop if any shadow copy exists",IDC_VSS_STOP,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP | WS_TABSTOP,55,132,136,10
+    CONTROL         "Defragment in VSS compatible mode",IDC_VSS_DEFRAG,
+                    "Button",BS_AUTORADIOBUTTON | WS_DISABLED,55,144,136,10
+    CONTROL         "Perform a normal defragmentation",IDC_VSS_NORMAL,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,55,176,136,10
+    LTEXT           "Note: When Application defragments a drive in VSS compatibility mode it may not defragment files/free space as completely as it normally does.",IDC_VSS_DEFRAG_NOTE,66,155,320,16,WS_DISABLED
+END
+
+IDD_UPDATE_PAGE DIALOGEX 0, 0, 400, 206
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Update"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Update Main Settings",IDC_BANER,7,0,283,14
+    CONTROL         "&Enable Auto Update",IDC_AUTO_UPDATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,20,363,10
+END
+
+IDD_RES_PAGE DIALOGEX 0, 0, 293, 206
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Resources"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Visit ADefrag Home Page",IDC_STATIC,36,34,82,8
+    PUSHBUTTON      "&Home Page",IDC_HOME,170,32,50,14
+    LTEXT           "Contact us",IDC_STATIC,36,62,35,8
+    PUSHBUTTON      "&Contact",IDC_CONTACT,170,60,50,14
+    LTEXT           "Product Home Page",IDC_STATIC,36,90,65,8
+    PUSHBUTTON      "&Product",IDC_PRODUCT,170,88,50,14
+    LTEXT           "Technical Support",IDC_STATIC,36,118,59,8
+    PUSHBUTTON      "&Support",IDC_SUPPORT,170,116,50,14
+END
+
+IDD_EXCLUDE_PAGE DIALOGEX 0, 0, 407, 270
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Exclude List"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Defrag Exclude List",IDC_BANER,7,0,283,14
+    CONTROL         "Exclude Files masks from the defragmentation pass (the files from a subfolders will be excluded too)",IDC_EXCLUDE_FILES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,20,363,10
+    CONTROL         "",IDC_EXCLUDE_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_CHECKBOXES | TVS_TRACKSELECT | TVS_INFOTIP | WS_BORDER | WS_HSCROLL | WS_GROUP | WS_TABSTOP,30,118,370,144
+    LTEXT           "Exclude &List:",IDC_EXCLUDE_EDIT,30,34,370,78
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_POPULAR_PAGE DLGINIT
+BEGIN
+    IDC_COLOR_SCHEME, 0x403, 5, 0
+0x6c42, 0x6575, "\000" 
+    IDC_COLOR_SCHEME, 0x403, 6, 0
+0x6c42, 0x6361, 0x006b, 
+    IDC_COLOR_SCHEME, 0x403, 5, 0
+0x7141, 0x6175, "\000" 
+    IDC_COLOR_SCHEME, 0x403, 7, 0
+0x6953, 0x766c, 0x7265, "\000" 
+    IDC_SCREENTIP_STYLE, 0x403, 40, 0
+0x6853, 0x776f, 0x6620, 0x6165, 0x7574, 0x6572, 0x6420, 0x7365, 0x7263, 
+0x7069, 0x6974, 0x6e6f, 0x2073, 0x6e69, 0x5320, 0x7263, 0x6565, 0x746e, 
+0x7069, 0x0073, 
+    IDC_SCREENTIP_STYLE, 0x403, 46, 0
+0x6f44, 0x276e, 0x2074, 0x6873, 0x776f, 0x6620, 0x6165, 0x7574, 0x6572, 
+0x6420, 0x7365, 0x7263, 0x7069, 0x6974, 0x6e6f, 0x2073, 0x6e69, 0x5320, 
+0x7263, 0x6565, 0x746e, 0x7069, 0x0073, 
+    IDC_SCREENTIP_STYLE, 0x403, 22, 0
+0x6f44, 0x276e, 0x2074, 0x6873, 0x776f, 0x5320, 0x7263, 0x6565, 0x746e, 
+0x7069, 0x0073, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_POPULAR_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 30
+    END
+
+    IDD_SCHEDULER_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 7
+        VERTGUIDE, 30
+        VERTGUIDE, 393
+    END
+
+    IDD_DEFRAG_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        VERTGUIDE, 30
+        BOTTOMMARGIN, 222
+        HORZGUIDE, 20
+    END
+
+    IDD_UPDATE_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 30
+    END
+
+    IDD_EXCLUDE_PAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 400
+        VERTGUIDE, 30
+        BOTTOMMARGIN, 262
+        HORZGUIDE, 20
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_SETTINGS_POPULAR    "Popular Commands"
+    IDS_SETTINGS_NOT_RIBON  "Commands not in the Ribbon"
+    IDS_SETTINGS_ALL_COMMANDS "All Commands"
+    IDS_SETTINGS_SHEET      "ADefrag Settings"
+    IDS_PAGE_POPULAR_TITLE  "Change the most popular options"
+    IDS_PAGE_CUSTOMIZE_TITLE 
+                            "Customize the Quick Access Toolbar and keyboard shortcuts"
+    IDS_PAGE_RESOURCE_TITLE "Contact ADefrag, find online resources and obtain additional information regarding our products and services"
+    IDS_PAGE_SCHEDULER_TITLE "Change the Scheduler settings"
+    IDS_PAGE_LOG_TITLE      "Change the Log settings"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PAGE_DEFRAG_TITLE   "Change the Defragmentation options"
+    IDS_PAGE_UPDATE_TITLE   "Change the Update options"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PAGE_EXCLUDELIST_TITLE "Change the Defragmentation Exclude List"
+    IDS_LOGFILE_CLEAR_OK    "Log file cleared."
+    IDS_LOGFILE_CLEAR_FAILED "Log file not found."
+    IDS_LOGFILE_VIEW_FAILED  "Failed to open Log File: %s"
+    IDS_RESOURCE_OPEN_FAILED "Failed to open address: %s"
+    IDS_RESOURCE_HOME        "http://www.adefrag.com"
+    IDS_RESOURCE_CONTACT     "http://www.adefrag.com/contacts.html"
+    IDS_RESOURCE_PRODUCT     "http://www.adefrag.com/products.html"
+    IDS_RESOURCE_SUPPORT     "mailto:support@adefrag.com"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
